@@ -1,7 +1,24 @@
 aid: asieris
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/asieris.png
 name: asieris
-description: asieris is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Asieris Pharmaceuticals is a China-based biopharmaceutical company developing innovative
+  therapies in genitourinary tumors and women's health. Its focus areas span urologic oncology (bladder
+  cancer diagnosis and treatment), women's health, and breast and gynecologic oncology, with marquee
+  assets Vesique (APL-1202) for bladder cancer and Cevira (APL-1702), a non-invasive photodynamic therapy
+  for cervical precancerous lesions. The company runs three proprietary R&D platforms (TIMN, TAIDD, DDC).
+  It was surfaced as a portfolio company of Qiming and added to the API Evangelist network; as a
+  biopharma company it publishes no public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/asieris/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Pharmaceuticals
+- Biotechnology
+- Healthcare
+- Oncology
+- Women's Health
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,27 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/asieris-domain-security.yml
 - type: Website
   url: https://asieris.cn
+- type: Website
+  name: Asieris (English)
+  url: https://asieris.com/
+- type: About
+  url: https://asieris.com/about/
+- type: Support
+  name: Contact
+  url: https://asieris.com/contact/
+- type: Blog
+  name: News
+  url: https://asieris.com/news/
+- type: PrivacyPolicy
+  url: https://asieris.com/privacy-policy/
+- type: TermsOfService
+  url: https://asieris.com/termsuse/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
